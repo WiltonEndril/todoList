@@ -3,7 +3,7 @@
 class Conexao{
 
   private $host = 'localhost';
-  private $dbname = ''
+  private $dbname = 'todo_list';
   private $user = 'root';
   private $pass ='';
 
@@ -20,7 +20,7 @@ class Conexao{
 
 
     }catch (PDOException $erro){
-      echo '<p>'.$erro->getMessege().'</p>';
+      echo '<p>'.$erro->getMessage().'</p>';
     }
   }
 }
